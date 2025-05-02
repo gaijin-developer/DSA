@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const LinkedList_1 = require("./classes/LinkedList");
+let foodStuff = new LinkedList_1.LinkedList();
+foodStuff.push("banana");
+foodStuff.push("apple");
+foodStuff.push("grapes");
+foodStuff.push("strawberry");
+const lastFoodItem = foodStuff.pop();
+const shiftedVal = foodStuff.shift();
+foodStuff.unshift("pepper");
+console.log("popped", lastFoodItem);
+console.log("shifted", shiftedVal);
+console.log(foodStuff);
+console.log(foodStuff.head);
+foodStuff.showItems();
+console.log(foodStuff.tail);
